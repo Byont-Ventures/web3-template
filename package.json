@@ -12,7 +12,9 @@
     "test": "DOTENV_CONFIG_PATH=.env.test node ./bin/mockthereum.js -c 'jest --transformIgnorePatterns \"node_modules/(?!@rainbow-me)/\" --setupFiles=dotenv/config'",
     "test:watch": "DOTENV_CONFIG_PATH=.env.test node ./bin/mockthereum.js -c 'jest --watch --transformIgnorePatterns \"node_modules/(?!@rainbow-me)/\" --setupFiles=dotenv/config'",
     "buf:generate": "buf generate",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "postinstall": "husky install",
+    "prepare": "husky install"
   },
   "browserslist": [
     ">0.3%",
@@ -44,6 +46,8 @@
     "@commitlint/config-conventional": "^17.1.0",
     "@commitlint/prompt-cli": "^17.1.2",
     "@next/bundle-analyzer": "^12.3.1",
+    "@openzeppelin/contracts": "^4.7.3",
+    "@openzeppelin/contracts-upgradeable": "^4.7.3",
     "@tailwindcss/typography": "^0.5.7",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -67,8 +71,13 @@
     "postcss": "^8.4.17",
     "prettier": "^2.7.1",
     "prettier-plugin-jsdoc": "^0.4.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.24",
+    "sol-merger": "^4.1.1",
+    "solhint": "^3.3.7",
+    "solhint-plugin-prettier": "^0.0.5",
     "tailwindcss": "^3.1.8",
     "ts-node": "^10.9.1",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "husky": "^8.0.0"
   }
 }
