@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { NodeService } from '@app/lib/gen/io/ducata/node/v1/node_connectweb'
+import { NodeService } from '@app/lib/gen/io/byont/node/v1/node_connectweb'
 import { useGrpcClient } from '../useGrpcClient'
 import { PartialMessage } from '@bufbuild/protobuf'
-import { DataParametersStreamRequest } from '@app/lib/gen/io/ducata/node/v1/node_pb'
+import { DataParametersStreamRequest } from '@app/lib/gen/io/byont/node/v1/node_pb'
 
 export interface DataParametersStreamData {
   ducaExchangeValue: string

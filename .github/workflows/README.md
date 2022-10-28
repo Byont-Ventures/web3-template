@@ -17,7 +17,7 @@ When forking this repository you might want to update the following workflow ref
 # .github/workflows/production.yml and # .github/workflows/preview.yml
 deploy:
   needs: format-test-lint
-  uses: DUCATA-private/DUCATA.io/.github/workflows/vercel.yml@main
+  uses: Byont-Ventures/web3-template/.github/workflows/vercel.yml@main
   with:
     VERCEL_ENVIRONMENT: production
   secrets: inherit
@@ -31,4 +31,4 @@ The job requires the following [repository secrets](https://docs.github.com/en/a
 
 Alternatively, you can remove the job above and set up Vercel using [Vercel for Github](https://vercel.com/docs/concepts/git/vercel-for-github) using the following button.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FDUCATA-private%2FDUCATA.io)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FByont-Ventures%2Fweb3-template)
