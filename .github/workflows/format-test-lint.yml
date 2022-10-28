@@ -1,0 +1,23 @@
+name: Format, Test & Lint
+
+on:
+  workflow_call:
+
+jobs:
+  format-test-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Run Jest
+        run: yarn test --passWithNoTests
+
+      - name: Run Prettier
+        run: yarn format
+
+      - name: Run ESLint
+        run: yarn lint

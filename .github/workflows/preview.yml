@@ -1,0 +1,17 @@
+name: Preview
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  format-test-lint:
+    uses: DUCATA-private/DUCATA.io/.github/workflows/format-test-lint.yml@main
+    secrets: inherit
+
+  deploy:
+    uses: DUCATA-private/DUCATA.io/.github/workflows/vercel.yml@main
+    with:
+      VERCEL_ENVIRONMENT: preview
+    secrets: inherit

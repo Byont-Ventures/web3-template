@@ -1,0 +1,18 @@
+name: Production
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  format-test-lint:
+    uses: DUCATA-private/DUCATA.io/.github/workflows/format-test-lint.yml@main
+    secrets: inherit
+
+  deploy:
+    needs: format-test-lint
+    uses: DUCATA-private/DUCATA.io/.github/workflows/vercel.yml@main
+    with:
+      VERCEL_ENVIRONMENT: production
+    secrets: inherit
