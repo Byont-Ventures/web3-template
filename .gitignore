@@ -36,3 +36,21 @@ yarn-error.log*
 next-env.d.ts
 
 gen
+
+# Secrets
+**/secrets.json
+.env
+
+# Foundry
+cache/smart-contracts
+dist/smart-contracts/
+
+# Hardhat
+**/**/artifacts
+**/**/.openzeppelin
+**/**/typechain-types
+
+# Custom
+**/**/flattened
+**/**/generated
+**/**/solc-out

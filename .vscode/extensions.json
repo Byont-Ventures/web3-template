@@ -10,6 +10,8 @@
     "blanu.vscode-styled-jsx",
     "wix.vscode-import-cost",
     "vivaxy.vscode-conventional-commits",
-    "orta.vscode-jest"
+    "orta.vscode-jest",
+    "juanblanco.solidity",
+    "streetsidesoftware.code-spell-checker"
   ]
 }

@@ -1,6 +1,6 @@
 # Github Workflows
 
-We automatically run a Github Workflow on each commit basaed on the branch you push to.
+We automatically run a Github Workflow on each commit based on the branch you push to.
 
 - `main`: `.github/workflows/production.yml`
 - all other branches: `.github/workflows/preview.yml`

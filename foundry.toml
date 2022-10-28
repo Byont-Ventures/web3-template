@@ -1,0 +1,23 @@
+
+[profile.default]
+    src = 'src/smart-contracts'
+    test = 'tests/smart-contracts'
+    out = 'dist/smart-contracts/'
+    cache_path = 'cache/smart-contracts'
+    libs = ['libs', 'node_modules']
+    solc = "0.8.17"
+
+[profile.ci]
+ src = 'src/smart-contracts'
+    test = 'tests/smart-contracts'
+    out = 'dist/smart-contracts/'
+    cache_path = 'cache/smart-contracts'
+    libs = ['libs', 'node_modules']
+    solc = "0.8.17"
+    verbosity = 4
+
+
+[profile.ci.fuzz]
+    runs = 1024
+    max_test_rejects = 924288
+
