@@ -15,7 +15,7 @@
     "sc:coverage": "forge coverage -vvv",
     "sc:lint": "solhint ./src/smart-contracts/*.sol",
     "lint": "yarn fe:lint && yarn sc:lint",
-    "format": "prettier --check --ignore-path .gitignore .",
+    "format": "prettier --loglevel warn --check --ignore-path .gitignore .",
     "format:fix": "prettier --write --ignore-path .gitignore .",
     "postbuild": "next-sitemap",
     "postinstall": "husky install",
