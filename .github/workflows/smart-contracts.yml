@@ -54,7 +54,7 @@ jobs:
           NODE_URL: ${{ secrets.NODE_URL }}
         run: |
           forge coverage --report lcov --use 0.8.13
-          lcov --remove lcov.info -o lcov.info '**/**/tests/**.sol' '**/**/mocks/**.sol'
+          lcov --remove lcov.info -o lcov.info '**/**/tests/**' '**/**/mocks/**.sol'
 
       - name: Coveralls
         uses: coverallsapp/github-action@master
