@@ -30,6 +30,7 @@ Then in the root of this repo:
 ```
 yarn install
 ```
+
 ## 2. Install foundry
 
 See the [docs](https://book.getfoundry.sh/getting-started/installation.html).
@@ -50,7 +51,7 @@ To configure/exclude certain rules reported by solhint, `.solhint.json` should b
 
 ```solidity
 require(<statement>, "<contract name> (<function name>): <error message>");
-````
+```
 
 #### Implementing an interface
 
