@@ -1,34 +1,37 @@
 import '@testing-library/jest-dom'
 import { waitFor } from '@testing-library/react'
 
-import { EthereumMock, render } from '../../../../tests'
+import { render } from '@/tests/index'
 import { StateRegistryData } from '../StateRegistryData'
+import { getMockedProvider, EthereumMock } from '@/tests/utils/mocked-providers'
 
 describe('<StateRegistryData />', () => {
-  beforeEach(async () => {
-    // Resests mocked state between tests
-    await EthereumMock.start()
-  })
-
-  afterEach(async () => await EthereumMock.stop())
+  // Start & stop your mock node to reset state between tests:
 
   describe('getCurrentState', () => {
+    beforeEach(async () => await EthereumMock.start())
+    afterEach(async () => await EthereumMock.stop())
+
+    // beforeEach(async () => await EthereumMock.start())
+    // afterEach(async () => await EthereumMock.stop())
     it('is renders mocked values', async () => {
       await EthereumMock.forCall(
-        process.env.NEXT_PUBLIC_STATE_REGISTRY_ADDRESS as `0x${string}`
+        '0x0000000000000000000000000000000000000000' as `0x${string}`
       )
         .forFunction(
           'function getCurrentState() public view returns (uint256, uint256, uint256, uint256, uint256, uint256, uint256)'
         )
         .thenReturn([1, 2, 3, 4, 5, 6, 7])
 
-      const { queryByTestId } = render(<StateRegistryData />)
+      const { queryByTestId } = render(<StateRegistryData />, {
+        providerFunc: getMockedProvider,
+      })
 
       await waitFor(() => {
         expect(
           queryByTestId('StateRegistryData_CurrentState')
         ).toHaveTextContent(
-          'ducaSupply: 6, mDucaCirculatingSupply: 5, lpDucaSupply: 7, reserveMDucaBalance: 4, stabilityPoolDucaBalance: 2, stabilityPoolMDucaBalance: 3, timestamp: 1'
+          'byontSupply: 6, mByontCirculatingSupply: 5, lpByontSupply: 7, reserveMByontBalance: 4, stabilityPoolByontBalance: 2, stabilityPoolMByontBalance: 3, timestamp: 1'
         )
       })
     })

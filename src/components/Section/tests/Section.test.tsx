@@ -1,6 +1,4 @@
-import '@testing-library/jest-dom'
-
-import { render } from '@testing-library/react'
+import { render } from '@/tests/index'
 
 import { Section } from '../Section'
 
@@ -16,7 +14,7 @@ describe('<Section />', () => {
       const { getByTestId } = render(
         <Section aria-describedby={describedByText} />
       )
-      expect(getByTestId('section')).toHaveAttribute(
+      expect(getByTestId('Section')).toHaveAttribute(
         'aria-describedby',
         describedByText
       )
@@ -25,16 +23,16 @@ describe('<Section />', () => {
   describe('fullWidth', () => {
     it('renders container by default', () => {
       const { getByTestId } = render(<Section />)
-      expect(getByTestId('section')).not.toHaveClass('w-full')
-      expect(getByTestId('section')).toHaveClass('container')
+      expect(getByTestId('Section')).not.toHaveClass('w-full')
+      expect(getByTestId('Section')).toHaveClass('container')
     })
     it('renders full width when true', () => {
       const { getByTestId } = render(<Section fullWidth={true} />)
-      expect(getByTestId('section')).toHaveClass('w-full')
+      expect(getByTestId('Section')).toHaveClass('w-full')
     })
     it('renders child with container prop when true', () => {
       const { getByTestId } = render(<Section fullWidth={true} />)
-      expect(getByTestId('section').firstChild).toHaveClass('container')
+      expect(getByTestId('Section').firstChild).toHaveClass('container')
     })
   })
   describe('classname', () => {
@@ -42,8 +40,8 @@ describe('<Section />', () => {
       const { getByTestId } = render(
         <Section className="mycustomnonexistingclass" />
       )
-      expect(getByTestId('section')).toHaveClass('mycustomnonexistingclass')
-      expect(getByTestId('section').classList.length).toBeGreaterThan(1)
+      expect(getByTestId('Section')).toHaveClass('mycustomnonexistingclass')
+      expect(getByTestId('Section').classList.length).toBeGreaterThan(1)
     })
   })
 })

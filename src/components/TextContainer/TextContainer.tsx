@@ -7,7 +7,7 @@ export const TextContainer: React.FC<JSX.IntrinsicElements['div']> = ({
 }) => {
   return (
     <div
-      data-testid="textContainer"
+      data-testid="TextContainer"
       className={classNames('prose', className)}
       {...props}
     >

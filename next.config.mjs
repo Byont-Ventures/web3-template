@@ -10,6 +10,9 @@ const nextConfig = {
     // Removes data-testid for production builds
     reactRemoveProperties: true,
   },
+  experimental: {
+    appDir: true,
+  },
 }
 
 const bundleAnalyzerConfig = withBundleAnalyzer({

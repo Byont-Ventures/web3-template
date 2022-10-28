@@ -25,7 +25,7 @@ describe('<Button />', () => {
       const { getByTestId } = render(
         <Button aria-describedby={describedByText} />
       )
-      expect(getByTestId('button')).toHaveAttribute(
+      expect(getByTestId('Button')).toHaveAttribute(
         'aria-describedby',
         describedByText
       )
@@ -36,39 +36,39 @@ describe('<Button />', () => {
       const { getByTestId } = render(
         <Button className="mycustomnonexistingclass" />
       )
-      expect(getByTestId('button')).toHaveClass('mycustomnonexistingclass')
-      expect(getByTestId('button').classList.length).toBeGreaterThan(1)
+      expect(getByTestId('Button')).toHaveClass('mycustomnonexistingclass')
+      expect(getByTestId('Button').classList.length).toBeGreaterThan(1)
     })
   })
   describe('variant', () => {
     it('renders primary button by default', () => {
       const { getByTestId } = render(<Button variant={undefined} />)
-      expect(getByTestId('button')).toHaveClass('bg-blue-5')
+      expect(getByTestId('Button')).toHaveClass('bg-blue-5')
     })
 
     it('renders primary button when variant passed', () => {
       const { getByTestId } = render(<Button variant="primary" />)
-      expect(getByTestId('button')).toHaveClass('bg-blue-5')
+      expect(getByTestId('Button')).toHaveClass('bg-blue-5')
     })
 
     it('renders secondary button when variant passed', () => {
       const { getByTestId } = render(<Button variant="secondary" />)
-      expect(getByTestId('button')).toHaveClass('bg-purple-40')
+      expect(getByTestId('Button')).toHaveClass('bg-purple-40')
     })
 
     it('renders tertiary button when variant passed', () => {
       const { getByTestId } = render(<Button variant="tertiary" />)
-      expect(getByTestId('button').className).not.toContain('bg-blue')
+      expect(getByTestId('Button').className).not.toContain('bg-blue')
     })
   })
   describe('icon', () => {
     it('renders without icon by default', () => {
       const { queryByTestId } = render(<Button />)
-      expect(queryByTestId('icon')).not.toBeInTheDocument()
+      expect(queryByTestId('Icon')).not.toBeInTheDocument()
     })
     it('renders icon when passed', () => {
       const { getByTestId } = render(<Button icon={faArrowRight} />)
-      expect(getByTestId('icon')).toBeInTheDocument()
+      expect(getByTestId('Icon')).toBeInTheDocument()
     })
   })
 })

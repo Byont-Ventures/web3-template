@@ -1,17 +1,17 @@
 import { ConnectButton as RainbowKitConnectButton } from '@rainbow-me/rainbowkit'
 import { useAccount } from 'wagmi'
+import { Text } from '@/components/Text'
 
 export const ConnectButton: React.FC = () => {
   const { address, isConnected } = useAccount()
 
   return (
     <>
-      <div>
-        <h1 className="text-xl font-bold">Connect Button</h1>
+      <div className="flex space-x-4">
         <RainbowKitConnectButton />
-        <p data-testid="ConnectButton_IsConnected">
+        <Text data-testid="ConnectButton_IsConnected">
           {isConnected ? address : null}
-        </p>
+        </Text>
       </div>
     </>
   )

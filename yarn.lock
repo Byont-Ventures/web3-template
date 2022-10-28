@@ -914,6 +914,44 @@
     "@ethersproject/properties" "^5.7.0"
     "@ethersproject/strings" "^5.7.0"
 
+"@fortawesome/fontawesome-common-types@6.2.0":
+  version "6.2.0"
+  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/6.2.0/fontawesome-common-types-6.2.0.tgz#76467a94aa888aeb22aafa43eb6ff889df3a5a7f"
+  integrity sha512-rBevIsj2nclStJ7AxTdfsa3ovHb1H+qApwrxcTVo+NNdeJiB9V75hsKfrkG5AwNcRUNxrPPiScGYCNmLMoh8pg==
+
+"@fortawesome/fontawesome-pro@^6.2.0":
+  version "6.2.0"
+  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-pro/-/6.2.0/fontawesome-pro-6.2.0.tgz#cfb0f1c8f4b33c5bee85fc337c29f77486a82611"
+  integrity sha512-T1JhszQ75ofAaa42XWBte5KsiBb7YM6CKMZTiR3zL0CHZGBabPg8J5FgMoJYlaxgrfLf+jOebDnoB0h43ljAsA==
+
+"@fortawesome/fontawesome-svg-core@^6.2.0":
+  version "6.2.0"
+  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-svg-core/-/6.2.0/fontawesome-svg-core-6.2.0.tgz#11856eaf4dd1d865c442ddea1eed8ee855186ba2"
+  integrity sha512-Cf2mAAeMWFMzpLC7Y9H1I4o3wEU+XovVJhTiNG8ZNgSQj53yl7OCJaS80K4YjrABWZzbAHVaoHE1dVJ27AAYXw==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.2.0"
+
+"@fortawesome/free-brands-svg-icons@^6.2.0":
+  version "6.2.0"
+  resolved "https://npm.fontawesome.com/@fortawesome/free-brands-svg-icons/-/6.2.0/free-brands-svg-icons-6.2.0.tgz#ce072179677f9b5d6767f918cfbf296f357cc1d0"
+  integrity sha512-fm1y4NyZ2qKYNmYhdMz9VAWRw1Et7PMHNunSw3W0SVAwKwv6o0qiJworLH3Y9SnmhHzAymXJwCX1op22FFvGiA==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.2.0"
+
+"@fortawesome/pro-solid-svg-icons@^6.2.0":
+  version "6.2.0"
+  resolved "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/6.2.0/pro-solid-svg-icons-6.2.0.tgz#ba7e1d85b75576306c456a9193e2799b64dd704c"
+  integrity sha512-zYlZE6FPsIT2o70U88oMai8C4x/CZvvz5AJ2MVJjac1PtGYyKVdt83TuLq6cEAx7ku3O/JiHWPrYRNtV6c1Zyg==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.2.0"
+
+"@fortawesome/react-fontawesome@^0.1.0":
+  version "0.1.19"
+  resolved "https://npm.fontawesome.com/@fortawesome/react-fontawesome/-/0.1.19/react-fontawesome-0.1.19.tgz#2b36917578596f31934e71f92b7cf9c425fd06e4"
+  integrity sha512-Hyb+lB8T18cvLNX0S3llz7PcSOAJMLwiVKBuuzwM/nI5uoBw+gQjnf9il0fR1C3DKOI5Kc79pkJ4/xB0Uw9aFQ==
+  dependencies:
+    prop-types "^15.8.1"
+
 "@graphql-tools/merge@8.3.1":
   version "8.3.1"
   resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-8.3.1.tgz#06121942ad28982a14635dbc87b5d488a041d722"
@@ -1301,6 +1339,11 @@
   integrity sha512-z+gnX4Zizatqatc6f4CQrcC9oN8Us3Vrq/OLyc98h7K/eWctrnV91zFZodmJHUjx0cITY8uYM7LXD7IdYkg3kg==
   dependencies:
     glob "7.1.7"
+
+"@next/font@^13.0.0":
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/@next/font/-/font-13.0.0.tgz#b8fef6252b3371edfdcaf91c95a42bee25d7fa30"
+  integrity sha512-r5dYkgMD1Qmoip1OhJSrqCSQdZ4eshkQPfe1hhQiKbZoXIbViJksPRLC6GVOgEQE6W4+CXuAXR6IYBy5M6Rixg==
 
 "@next/swc-android-arm-eabi@13.0.0":
   version "13.0.0"
@@ -3036,6 +3079,11 @@ cjs-module-lexer@^1.0.0:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz#9f84ba3244a512f3a54e5277e8eef4c489864e40"
   integrity sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==
+
+classnames@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
+  integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
 
 cli-color@^1.4.0:
   version "1.4.0"
@@ -6747,10 +6795,10 @@ mkdirp@^0.5.1, mkdirp@^0.5.5:
   dependencies:
     minimist "^1.2.6"
 
-mockthereum@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/mockthereum/-/mockthereum-0.2.0.tgz#7cc8972b0eba79215b21aeb90d6800774c5caa91"
-  integrity sha512-EyHhQBbm0W3VGt42YWVv0Q7ILOBWih6JENRsgibsT6zKZUVyZaQs1tKyNJ4/Xb2AZ0yikpoquDXZeKPcfYpTNw==
+mockthereum@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/mockthereum/-/mockthereum-0.1.0.tgz#d2b408086b6c23ec05ba8d30e725bf39b1c4455a"
+  integrity sha512-jyTiuip9j3cXSNKmqmiHAi2HHMUYqFPX/Vrx8BQUFacqhxB+8I5Uu3ad5w6YkmpBwevY14ihL/n6t9OSnHlJVA==
   dependencies:
     "@ethersproject/abi" "^5.6.3"
     mockttp "^3.1.0"

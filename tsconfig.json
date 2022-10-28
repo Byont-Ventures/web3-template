@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -16,9 +16,10 @@
     "isolatedModules": true,
     "baseUrl": "./",
     "paths": {
-      "@app/*": ["src/*"],
-      "@types/*": ["types/*"],
-      "@testing": ["tests/index"]
+      "@/components/*": ["src/components/*"],
+      "@/libs/*": ["src/libs/*"],
+      "@/tests/*": ["src/tests/*"],
+      "@/images/*": ["public/images/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "bin/mockthereum.js"],

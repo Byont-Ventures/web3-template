@@ -6,6 +6,7 @@ import Link from 'next/link'
 export interface ButtonProps {
   /**
    * Color style of the element
+   *
    * @default 'primary'
    */
   variant?: 'primary' | 'secondary' | 'tertiary'
@@ -39,7 +40,7 @@ export const Button: React.FC<
   if (isAnchor(props)) {
     const { href, ...anchorProps } = props
     return (
-      <Link data-testid="anchor" href={href ?? '/'}>
+      <Link data-testid="Anchor" href={href ?? '/'}>
         <a className={classList} {...anchorProps}>
           {icon ? (
             <>
@@ -56,7 +57,7 @@ export const Button: React.FC<
 
   return (
     <button
-      data-testid="button"
+      data-testid="Button"
       className={classList}
       {...(props as JSX.IntrinsicElements['button'])}
     >

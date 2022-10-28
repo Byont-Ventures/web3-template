@@ -1,9 +1,10 @@
 import '@testing-library/jest-dom'
 import { waitFor } from '@testing-library/react'
-import { getMockedProvider } from 'tests/utils/mocked-providers'
 
-import { EthereumMock, render, wrapper, setupClient } from '../../../../tests'
+import { render, setupClient, getWrapper } from '../../../tests'
 import { ConnectButton } from '../ConnectButton'
+import { EthereumMock, getMockedProvider } from '@/tests/utils/mocked-providers'
+import { getProvider } from '@/tests/utils/providers'
 
 /**
  * Mocking entire module, see
@@ -26,7 +27,7 @@ describe('<ConnectButton />', () => {
     it('is visible when user is connected', async () => {
       const { queryByTestId } = render(<ConnectButton />, {
         wrapper: ({ children }) =>
-          wrapper({
+          getWrapper(getProvider)({
             children,
             // Auto connecting to a MockConnector to reduce test complexity while connecting usin the [RainbowKit](https://github.com/rainbow-me/rainbowkit/tree/main/packages/rainbowkit/src) modals.
             client: setupClient(getMockedProvider, { autoConnect: true }),

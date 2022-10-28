@@ -3,6 +3,7 @@ import classNames from 'classnames'
 export interface SectionProps {
   /**
    * If true makes the section full width otherwise container width
+   *
    * @default false
    */
   fullWidth?: boolean
@@ -19,11 +20,11 @@ export const Section: React.FC<
         fullWidth ? null : className
       )}
       {...props}
-      data-testid="section"
+      data-testid="Section"
     >
       {fullWidth ? (
         <div
-          data-testid="fullWidthContainer"
+          data-testid="FullWidthContainer"
           className={classNames('container', fullWidth ? className : null)}
         >
           {children}

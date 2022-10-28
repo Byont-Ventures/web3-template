@@ -1,6 +1,4 @@
-import '@testing-library/jest-dom'
-
-import { render } from '@testing-library/react'
+import { render } from '@/tests/index'
 
 import { TextContainer } from '../TextContainer'
 
@@ -9,14 +7,14 @@ describe('<TextContainer />', () => {
     it('passes props', () => {
       const childText = 'Get in touch!'
       const { getByTestId } = render(<TextContainer>{childText}</TextContainer>)
-      expect(getByTestId('textContainer')).toHaveTextContent(childText)
+      expect(getByTestId('TextContainer')).toHaveTextContent(childText)
     })
     it('passes intrinsic element props', () => {
       const describedByText = 'Get in touch!'
       const { getByTestId } = render(
         <TextContainer aria-describedby={describedByText} />
       )
-      expect(getByTestId('textContainer')).toHaveAttribute(
+      expect(getByTestId('TextContainer')).toHaveAttribute(
         'aria-describedby',
         describedByText
       )
@@ -27,7 +25,7 @@ describe('<TextContainer />', () => {
       const { getByTestId } = render(
         <TextContainer className="mycustomnonexistingclass" />
       )
-      expect(getByTestId('textContainer')).toHaveClass(
+      expect(getByTestId('TextContainer')).toHaveClass(
         'mycustomnonexistingclass'
       )
     })

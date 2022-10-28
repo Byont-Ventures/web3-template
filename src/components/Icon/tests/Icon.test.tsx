@@ -1,7 +1,5 @@
 import { faArrowRight } from '@fortawesome/pro-solid-svg-icons'
-import '@testing-library/jest-dom'
-
-import { render } from '@testing-library/react'
+import { render } from '@/tests/index'
 
 import { Icon } from '../Icon'
 
@@ -11,11 +9,11 @@ describe('<Section />', () => {
       const { getByTestId } = render(
         <Icon icon={faArrowRight} className="mycustomnonexistingclass" />
       )
-      expect(getByTestId('icon')).toHaveClass('mycustomnonexistingclass')
+      expect(getByTestId('Icon')).toHaveClass('mycustomnonexistingclass')
     })
     it('contains fixed width and height', () => {
       const { getByTestId } = render(<Icon icon={faArrowRight} />)
-      expect(getByTestId('icon')).toHaveClass('w-4 h-4')
+      expect(getByTestId('Icon')).toHaveClass('w-4 h-4')
     })
   })
 })

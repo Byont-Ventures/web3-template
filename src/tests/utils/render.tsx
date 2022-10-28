@@ -16,7 +16,14 @@ import {
 import { MockConnector } from 'wagmi/connectors/mock'
 import { getProvider } from './providers'
 import { getSigners } from './signers'
-import { getMockedProvider } from './mocked-providers'
+
+type ProviderFunc = (
+  ...args: Omit<Parameters<typeof getProvider>, 'url'>
+) => Provider
+
+type CustomRenderOptions = RenderOptions & {
+  providerFunc?: ProviderFunc
+}
 
 /** Setup a Wagmi client based on a custom provider */
 export const setupClient = (
@@ -44,11 +51,22 @@ export const setupClient = (
  * @see https://testing-library.com/docs/react-testing-library/api/#wrapper
  * @see https://github.com/wagmi-dev/wagmi/blob/main/packages/core/test/index.ts
  */
-export const wrapper: React.FC<
-  PropsWithChildren<{ client?: WagmiConfigProps['client'] }>
-> = ({ children, client = setupClient(getMockedProvider) }) => {
-  return <WagmiConfig client={client}>{children}</WagmiConfig>
+export const getWrapper = (providerFunc: ProviderFunc = getProvider) => {
+  const wrapper: React.FC<
+    PropsWithChildren<{ client?: WagmiConfigProps['client'] }>
+  > = ({ children, client = setupClient(providerFunc) }) => {
+    return <WagmiConfig client={client}>{children}</WagmiConfig>
+  }
+
+  return wrapper
 }
 
-export const render = (ui: ReactElement, options?: RenderOptions) =>
-  testingLibraryRender(ui, { wrapper, ...options })
+export const render = (ui: ReactElement, options?: CustomRenderOptions) =>
+  testingLibraryRender(ui, {
+    wrapper: getWrapper(
+      options !== undefined && options.providerFunc !== undefined
+        ? options.providerFunc
+        : getProvider
+    ),
+    ...options,
+  })
