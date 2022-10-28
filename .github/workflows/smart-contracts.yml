@@ -25,7 +25,7 @@ jobs:
           version: nightly
 
       - name: run tests
-        run: FOUNDRY_PROFILE=protocol-ci forge test -vvv
+        run: FOUNDRY_PROFILE=ci forge test -vvv
 
   CoverageCoveralls:
     runs-on: ubuntu-latest
@@ -43,7 +43,7 @@ jobs:
           version: nightly
 
       - name: Setup LCOV
-        uses: DUCATA-private/setup-lcov@main
+        uses: Byont-Ventures/setup-lcov@main
 
       - name: run coverage
         working-directory: .

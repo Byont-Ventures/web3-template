@@ -5,10 +5,10 @@
 We use profiles to differentiate between environments, and the batch auction / core protocol code.
 
 - default (on by default)
-- batch-auction
+- ci
   Add the environment name as environment variable to run it correspondingly.
 
-`FOUNDRY_PROFILE`=batch-auction forge test -vvv --gas-report
+`FOUNDRY_PROFILE`=ci forge test -vvv --gas-report
 
 ## Commands
 
@@ -41,12 +41,3 @@ Verify upgradable with hardhat
 
 Upgrade with hardhat
 `npx hardhat UpgradeContract --network {args.network} --deployment-data-file {args.deploymentDataFile}`
-
-Run slither:
-`./report/slither/runSlither.sh {args.solcVersion} ./projects/{projectname} Validator`
-
-Generate test report:
-`report/test/generateTestReport.sh ./ test/testReport.md ./ {args.solcVersion}`
-
-Generate docs:
-`npx hardhat docgen`

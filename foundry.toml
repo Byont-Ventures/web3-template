@@ -14,7 +14,7 @@
     cache_path = 'cache/smart-contracts'
     libs = ['lib', 'node_modules']
     solc = "0.8.17"
-    verbosity=4
+    verbosity = 4
 
 
 [profile.ci.fuzz]
