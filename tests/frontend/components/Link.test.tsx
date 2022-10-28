@@ -1,6 +1,6 @@
 import { render } from '@/tests/index'
 
-import { Link } from '../Link'
+import { Link } from '@/components/Link'
 
 describe('<Link />', () => {
   describe('children', () => {

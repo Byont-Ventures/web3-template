@@ -1,7 +1,7 @@
 import { render } from '@/tests/index'
 import userEvent from '@testing-library/user-event'
 
-import { SkipToMain } from '../SkipToMain'
+import { SkipToMain } from '@/components/SkipToMain'
 
 describe('<SkipToMain />', () => {
   describe('accessibility', () => {

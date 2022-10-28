@@ -1,6 +1,6 @@
 import { render } from '@/tests/index'
 
-import { Section } from '../Section'
+import { Section } from '@/components/Section'
 
 describe('<Section />', () => {
   describe('children', () => {

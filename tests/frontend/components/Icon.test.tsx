@@ -1,7 +1,7 @@
 import { faArrowRight } from '@fortawesome/pro-solid-svg-icons'
 import { render } from '@/tests/index'
 
-import { Icon } from '../Icon'
+import { Icon } from '@/components/Icon'
 
 describe('<Section />', () => {
   describe('classname', () => {

@@ -18,7 +18,7 @@
     "paths": {
       "@/components/*": ["src/components/*"],
       "@/libs/*": ["src/libs/*"],
-      "@/tests/*": ["src/tests/*"],
+      "@/tests/*": ["tests/frontend/*"],
       "@/images/*": ["public/images/*"]
     },
     "plugins": [

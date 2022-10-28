@@ -4,7 +4,7 @@ import { faArrowRight } from '@fortawesome/pro-solid-svg-icons'
 
 import { render } from '@testing-library/react'
 
-import { Button } from '../Button'
+import { Button } from '@/components/Button'
 
 describe('<Button />', () => {
   describe('children', () => {

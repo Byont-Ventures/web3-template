@@ -1,6 +1,6 @@
 import { render } from '@/tests/index'
 
-import { TextContainer } from '../TextContainer'
+import { TextContainer } from '@/components/TextContainer'
 
 describe('<TextContainer />', () => {
   describe('children', () => {

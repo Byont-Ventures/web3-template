@@ -1,6 +1,6 @@
 import { render } from '@/tests/index'
 
-import { Text, VariantStyles } from '../Text'
+import { Text, VariantStyles } from '@/components/Text'
 
 describe('<Text />', () => {
   describe('children', () => {
