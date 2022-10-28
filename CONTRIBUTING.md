@@ -1,6 +1,6 @@
 # How to contribute
 
-We want to make it as easy and transparent as possible to contribute. If you feel like we can make this proces any easier make sure to file [an issue](https://github.com/DUCATA-private/DUCATA.io/issues/new).
+We want to make it as easy and transparent as possible to contribute. If you feel like we can make this proces any easier make sure to file [an issue](https://github.com/Byont-Ventures/web3-template/issues/new).
 
 ## Code style
 
@@ -37,7 +37,7 @@ If haven't used Conventional Commits before you can start by using the [Conventi
 
 ## Browser support
 
-We support the latest two versions of all major browsers unless otherwise noted. Most notably we **don't** support Internet Explorer. Some browsers that are frequently used to access the Ducata website include:
+We support the latest two versions of all major browsers unless otherwise noted. Most notably we **don't** support Internet Explorer. Some browsers that are frequently used to access the Byont website include:
 
 - Google Chrome
 - Mozilla Firefox
@@ -74,10 +74,10 @@ NEXT_ANALYZE_BUNDLE=true yarn build
 
 ## Writing tests
 
-TODO: https://github.com/DUCATA-private/DUCATA.io/issues/8
+TODO: https://github.com/Byont-Ventures/web3-template/issues/8
 
 - https://testing-library.com/docs/react-testing-library/setup
 
 ## Coding standards
 
-TODO: https://github.com/DUCATA-private/DUCATA.io/issues/9
+TODO: https://github.com/Byont-Ventures/web3-template/issues/9

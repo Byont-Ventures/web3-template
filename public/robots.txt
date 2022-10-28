@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.ducata.io
+Host: https://www.byont.io
 
 # Sitemaps
-Sitemap: https://www.ducata.io/sitemap.xml
+Sitemap: https://www.byont.io/sitemap.xml

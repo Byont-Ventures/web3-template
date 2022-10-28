@@ -1,8 +1,8 @@
-# DUCATA.io
+# web3-template
 
-[![Production](https://github.com/DUCATA-private/DUCATA.io/actions/workflows/production.yml/badge.svg?branch=main)](https://github.com/DUCATA-private/DUCATA.io/actions/workflows/production.yml)
+[![Production](https://github.com/Byont-Ventures/web3-template/actions/workflows/production.yml/badge.svg?branch=main)](https://github.com/Byont-Ventures/web3-template/actions/workflows/production.yml)
 
-The Ducata website repository holds all the source code for the website. This repository is largely based on the [Shopify Polaris (`polaris-react`)](https://github.com/Shopify/polaris/tree/main/polaris-react).
+The Byont website repository holds all the source code for the website. This repository is largely based on the [Shopify Polaris (`polaris-react`)](https://github.com/Shopify/polaris/tree/main/polaris-react).
 
 ## Installation
 
