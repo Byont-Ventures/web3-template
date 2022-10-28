@@ -1,26 +1,4 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "conventionalCommits.scopes": ["frontend", "smart-contract"],
-  "jest.jestCommandLine": "yarn test",
-  "[solidity]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "solidity.formatter": "prettier",
-  "solidity.linter": "solhint",
-  "slither.solcPath": "",
-  "slither.hiddenDetectors": [],
-  "search.exclude": {
-    "**/out": true,
-    "**/cache": true
-  },
-  "files.exclude": {
-    // "**/lib": true,
-  },
-  "cSpell.words": ["mockthereum"],
   "typescript.tsdk": "./node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true
 }

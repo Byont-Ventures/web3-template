@@ -42,8 +42,8 @@ gen
 .env
 
 # Foundry
-cache/smart-contracts
-dist/smart-contracts/
+cache
+dist
 
 # Hardhat
 **/**/artifacts

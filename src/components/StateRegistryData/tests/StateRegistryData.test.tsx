@@ -3,10 +3,7 @@ import { waitFor } from '@testing-library/react'
 
 import { render } from '@/tests/index'
 import { StateRegistryData } from '@/components/StateRegistryData'
-import {
-  getMockedProvider,
-  EthereumMock,
-} from 'tests/frontend/utils/mocked-providers'
+import { getMockedProvider, EthereumMock } from '@/tests/utils/mocked-providers'
 
 describe('<StateRegistryData />', () => {
   // Start & stop your mock node to reset state between tests:

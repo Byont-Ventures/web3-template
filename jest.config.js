@@ -17,10 +17,10 @@ const customJestConfig = {
   testEnvironment: 'jest-environment-jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.env.js'],
   moduleNameMapper: {
-    '^@/components/(.*)$': '<rootDir>/src/frontend/components/$1',
-    '^@/libs/(.*)$': '<rootDir>/src/frontend/libs/$1',
-    '^@/tests/(.*)$': '<rootDir>/tests/$1',
-    '^@/images/(.*)$': '<rootDir>/src/frontend/images/$1',
+    '^@/components/(.*)$': '<rootDir>/src/components/$1',
+    '^@/libs/(.*)$': '<rootDir>/src/libs/$1',
+    '^@/tests/(.*)$': '<rootDir>/src/tests/$1',
+    '^@/images/(.*)$': '<rootDir>/src/images/$1',
     uuid: require.resolve('uuid'),
   },
 }
