@@ -27,9 +27,9 @@ npm install --global yarn@1.22.19
 
 Then in the root of this repo:
 
-````
+```
 yarn install
-
+```
 ## 2. Install foundry
 
 See the [docs](https://book.getfoundry.sh/getting-started/installation.html).
