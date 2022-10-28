@@ -4,7 +4,7 @@
     test = 'tests/smart-contracts'
     out = 'dist/smart-contracts/'
     cache_path = 'cache/smart-contracts'
-    libs = ['lib', 'node_modules']
+    libs = ['libs', 'node_modules']
     solc = "0.8.17"
 
 [profile.ci]
@@ -12,7 +12,7 @@
     test = 'tests/smart-contracts'
     out = 'dist/smart-contracts/'
     cache_path = 'cache/smart-contracts'
-    libs = ['lib', 'node_modules']
+    libs = ['libs', 'node_modules']
     solc = "0.8.17"
     verbosity = 4
 
