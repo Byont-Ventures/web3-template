@@ -7,6 +7,6 @@
     "reason-string": ["off", { "maxLength": 32 }],
     "no-empty-blocks": ["off"],
     "not-rely-on-time": "off",
-    "quotes": "single"
+    "quotes": ["error", "single"]
   }
-}yanr 
+}
