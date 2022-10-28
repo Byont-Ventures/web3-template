@@ -44,6 +44,7 @@ gen
 # Foundry
 cache
 dist
+lcov.info
 
 # Hardhat
 **/**/artifacts
