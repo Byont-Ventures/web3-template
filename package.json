@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "fe:dev": "next dev",
-    "fe:build": "next build -o dist/frontend",
+    "fe:build": "next build",
     "fe:start": "next start",
     "fe:lint": "next lint",
     "fe:test": "DOTENV_CONFIG_PATH=.env.test node src/bin/mockthereum.js -c 'jest --setupFiles=dotenv/config'",

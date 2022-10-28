@@ -28,7 +28,7 @@ npm install --global yarn@1.22.19
 Then in the root of this repo:
 
 ```
-yarn install
+FONTAWESOME_NPM_AUTH_TOKEN=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX yarn install
 ```
 
 ## 2. Install foundry
@@ -105,7 +105,7 @@ The Byont website repository holds all the source code for the website. This rep
 ```sh
 cp .env.example .env.local
 
-yarn install
+FONTAWESOME_NPM_AUTH_TOKEN=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX yarn install
 
 # Generate boilerplate code for gRPC
 yarn buf:generate
