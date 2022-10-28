@@ -16,9 +16,9 @@
     "isolatedModules": true,
     "baseUrl": "./",
     "paths": {
-      "@/components/*": ["src/components/*"],
-      "@/libs/*": ["src/libs/*"],
-      "@/tests/*": ["tests/frontend/*"],
+      "@/components/*": ["src/frontend/components/*"],
+      "@/libs/*": ["src/frontend/libs/*"],
+      "@/tests/*": ["tests/frontend/frontend/*"],
       "@/images/*": ["public/images/*"]
     },
     "plugins": [
@@ -31,7 +31,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "bin/mockthereum.js",
+    "src/frontend/bin/mockthereum.js",
     ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
