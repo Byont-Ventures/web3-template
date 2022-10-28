@@ -2,7 +2,7 @@ import '@testing-library/jest-dom'
 
 import { faArrowRight } from '@fortawesome/pro-solid-svg-icons'
 
-import { render } from '@testing-library/react'
+import { render } from '@/tests/index'
 
 import { Button } from '@/components/Button'
 
