@@ -1,4 +1,4 @@
-name: CI
+name: Smart-contracts
 
 on:
   push:
@@ -26,24 +26,6 @@ jobs:
 
       - name: run tests
         run: FOUNDRY_PROFILE=protocol-ci forge test -vvv
-
-  UnitTestsAuction:
-    runs-on: ubuntu-latest
-
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-        with:
-          submodules: recursive
-      - uses: bahmutov/npm-install@v1
-      - run: yarn install
-
-      - uses: foundry-rs/foundry-toolchain@v1
-        with:
-          version: nightly
-
-      - name: run tests for auction contracts
-        run: FOUNDRY_PROFILE=batch-auction-ci forge test -vvv --gas-report
 
   CoverageCoveralls:
     runs-on: ubuntu-latest

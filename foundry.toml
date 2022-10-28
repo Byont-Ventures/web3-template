@@ -1,43 +1,23 @@
 
 [profile.default]
-    src = 'projects/protocol/src'
-    test = 'projects/protocol/test'
-    out = 'projects/protocol/out'
-    cache_path = 'projects/protocol/cache'
+    src = 'src/smart-contracts'
+    test = 'tests/smart-contracts'
+    out = 'dist/smart-contracts/'
+    cache_path = 'cache/smart-contracts'
     libs = ['lib', 'node_modules']
-    solc = "0.8.13"
+    solc = "0.8.17"
 
-[profile.protocol-ci]
-    src = 'projects/protocol/src'
-    test = 'projects/protocol/test'
-    out = 'projects/protocol/out'
-    cache_path = 'projects/protocol/cache'
+[profile.ci]
+ src = 'src/smart-contracts'
+    test = 'tests/smart-contracts'
+    out = 'dist/smart-contracts/'
+    cache_path = 'cache/smart-contracts'
     libs = ['lib', 'node_modules']
-    solc = "0.8.13"
+    solc = "0.8.17"
     verbosity=4
 
 
-[profile.protocol-ci.fuzz]
+[profile.ci.fuzz]
     runs = 1024
     max_test_rejects = 924288
 
-[profile.batch-auction]
-    src = 'projects/batch-auction/src'
-    test = 'projects/batch-auction/test'
-    out = 'projects/batch-auction/out'
-    cache_path = 'projects/batch-auction/cache'
-    libs = ['lib', 'node_modules']
-    solc = "0.6.12"
-
-[profile.batch-auction-ci]
-    src = 'projects/batch-auction/src'
-    test = 'projects/batch-auction/test'
-    out = 'projects/batch-auction/out'
-    cache_path = 'projects/batch-auction/cache'
-    libs = ['lib', 'node_modules']
-    solc = "0.6.12"
-    verbosity=4
-
-[profile.batch-auction-ci.fuzz]
-    runs = 1024
-    max_test_rejects = 924288
