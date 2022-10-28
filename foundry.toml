@@ -1,21 +1,19 @@
 
 [profile.default]
-    src = 'smart-contracts'
+    src = 'smart-contracts/src'
     test = 'smart-contracts/tests'
     out = 'dist/smart-contracts/'
-    cache_path = 'smart-contracts/cache/smart-contracts'
+    cache_path = 'cache/'
     libs = ['smart-contracts/libs', 'node_modules']
-    fs_permissions = [{ access = "read-write", path = "./smart-contracts"}]
     solc = "0.8.17"
 
 [profile.ci]
-    src = 'src/smart-contracts'
+    src = 'smart-contracts/src'
     test = 'smart-contracts/tests'
     out = 'dist/smart-contracts/'
-    cache_path = 'smart-contracts/cache/smart-contracts'
+    cache_path = 'cache/'
     libs = ['smart-contracts/libs', 'node_modules']
     solc = "0.8.17"
-    fs_permissions = [{ access = "read-write", path = "./smart-contracts"}]
     verbosity = 4
 
 [profile.ci.fuzz]
