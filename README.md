@@ -142,5 +142,4 @@ yarn test:watch
 Pull requests are welcome. See the [contribution guidelines](/CONTRIBUTING.md) for more information.
 
 - https://github.com/tmm/testing-wagmi
-- https://github.com/rainbow-me/rainbowkit/issues/461
 - https://github.com/httptoolkit/mockthereum

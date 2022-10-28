@@ -16,7 +16,7 @@ export const Link: React.FC<PropsWithChildren<NextLinkProps & LinkProps>> = ({
       data-testid="Link"
       href={href}
       className={classNames(
-        'font-pangea font-medium transition-colors duration-100 hover:text-yellow-40 focus:text-yellow-50 break-words',
+        'font-medium transition-colors duration-100 hover:text-orange-400 focus:text-orange-500 break-words',
         className
       )}
       {...props}

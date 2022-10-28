@@ -9,7 +9,7 @@ export interface ButtonProps {
    *
    * @default 'primary'
    */
-  variant?: 'primary' | 'secondary' | 'tertiary'
+  variant?: 'primary'
 
   icon?: IconProp
 }
@@ -25,14 +25,10 @@ export const Button: React.FC<
   (JSX.IntrinsicElements['button'] | JSX.IntrinsicElements['a']) & ButtonProps
 > = ({ variant = 'primary', icon, className, children, ...props }) => {
   const classList = classNames(
-    'no-underline font-medium leading-6 transition-colors duration-100 font-pangea space-x-1.5 flex items-center selection:bg-opacity-50 group',
+    'no-underline font-medium leading-6 transition-colors duration-100 space-x-1.5 flex items-center selection:bg-opacity-50 group',
     {
-      'bg-blue-5 text-blue-100 hover:bg-blue-10 active:bg-blue-20 py-1 px-3 rounded-full':
+      'bg-blue-500 text-blue-50 hover:bg-blue-600 active:bg-blue-700 py-1 px-3 rounded-full':
         variant === 'primary',
-      'bg-purple-40 text-blue-5 hover:bg-purple-50 active:bg-purple-60 py-1 px-3 rounded-full':
-        variant === 'secondary',
-      'text-blue-10 hover:text-yellow-40 active:text-yellow-50':
-        variant === 'tertiary',
     },
     className
   )

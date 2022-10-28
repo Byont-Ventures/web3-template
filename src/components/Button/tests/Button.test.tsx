@@ -43,22 +43,12 @@ describe('<Button />', () => {
   describe('variant', () => {
     it('renders primary button by default', () => {
       const { getByTestId } = render(<Button variant={undefined} />)
-      expect(getByTestId('Button')).toHaveClass('bg-blue-5')
+      expect(getByTestId('Button')).toHaveClass('bg-blue-500')
     })
 
     it('renders primary button when variant passed', () => {
       const { getByTestId } = render(<Button variant="primary" />)
-      expect(getByTestId('Button')).toHaveClass('bg-blue-5')
-    })
-
-    it('renders secondary button when variant passed', () => {
-      const { getByTestId } = render(<Button variant="secondary" />)
-      expect(getByTestId('Button')).toHaveClass('bg-purple-40')
-    })
-
-    it('renders tertiary button when variant passed', () => {
-      const { getByTestId } = render(<Button variant="tertiary" />)
-      expect(getByTestId('Button').className).not.toContain('bg-blue')
+      expect(getByTestId('Button')).toHaveClass('bg-blue-500')
     })
   })
   describe('icon', () => {

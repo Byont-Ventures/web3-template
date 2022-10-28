@@ -20,8 +20,19 @@
       "@/libs/*": ["src/libs/*"],
       "@/tests/*": ["src/tests/*"],
       "@/images/*": ["public/images/*"]
-    }
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "bin/mockthereum.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "bin/mockthereum.js",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }

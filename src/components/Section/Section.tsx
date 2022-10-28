@@ -16,7 +16,7 @@ export const Section: React.FC<
     <section
       className={classNames(
         'space-y-8 md:space-y-16',
-        fullWidth ? 'w-full bg-blue-95 py-8 md:py-16 xl:py-24' : 'container',
+        fullWidth ? 'w-full py-8 md:py-16 xl:py-24' : 'container',
         fullWidth ? null : className
       )}
       {...props}
