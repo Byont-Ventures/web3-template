@@ -5,6 +5,7 @@
     out = 'dist/smart-contracts/'
     cache_path = 'smart-contracts/cache/smart-contracts'
     libs = ['smart-contracts/libs', 'node_modules']
+    fs_permissions = [{ access = "read-write", path = "./smart-contracts"}]
     solc = "0.8.17"
 
 [profile.ci]
@@ -14,6 +15,7 @@
     cache_path = 'smart-contracts/cache/smart-contracts'
     libs = ['smart-contracts/libs', 'node_modules']
     solc = "0.8.17"
+    fs_permissions = [{ access = "read-write", path = "./smart-contracts"}]
     verbosity = 4
 
 [profile.ci.fuzz]
