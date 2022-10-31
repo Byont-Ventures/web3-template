@@ -56,32 +56,32 @@ export const StateRegistryAbi = [
           },
           {
             internalType: 'uint256',
-            name: 'stabilityPoolDucaBalance',
+            name: 'stabilityPoolByontBalance',
             type: 'uint256',
           },
           {
             internalType: 'uint256',
-            name: 'stabilityPoolMDucaBalance',
+            name: 'stabilityPoolMByontBalance',
             type: 'uint256',
           },
           {
             internalType: 'uint256',
-            name: 'reserveMDucaBalance',
+            name: 'reserveMByontBalance',
             type: 'uint256',
           },
           {
             internalType: 'uint256',
-            name: 'mDucaCirculatingSupply',
+            name: 'mByontCirculatingSupply',
             type: 'uint256',
           },
           {
             internalType: 'uint256',
-            name: 'ducaSupply',
+            name: 'byontSupply',
             type: 'uint256',
           },
           {
             internalType: 'uint256',
-            name: 'lpDucaSupply',
+            name: 'lpByontSupply',
             type: 'uint256',
           },
         ],
@@ -134,7 +134,7 @@ export const StateRegistryAbi = [
   },
   {
     inputs: [],
-    name: 'duca',
+    name: 'byont',
     outputs: [
       {
         internalType: 'contract IERC20Upgradeable',
@@ -171,32 +171,32 @@ export const StateRegistryAbi = [
           },
           {
             internalType: 'uint256',
-            name: 'stabilityPoolDucaBalance',
+            name: 'stabilityPoolByontBalance',
             type: 'uint256',
           },
           {
             internalType: 'uint256',
-            name: 'stabilityPoolMDucaBalance',
+            name: 'stabilityPoolMByontBalance',
             type: 'uint256',
           },
           {
             internalType: 'uint256',
-            name: 'reserveMDucaBalance',
+            name: 'reserveMByontBalance',
             type: 'uint256',
           },
           {
             internalType: 'uint256',
-            name: 'mDucaCirculatingSupply',
+            name: 'mByontCirculatingSupply',
             type: 'uint256',
           },
           {
             internalType: 'uint256',
-            name: 'ducaSupply',
+            name: 'byontSupply',
             type: 'uint256',
           },
           {
             internalType: 'uint256',
-            name: 'lpDucaSupply',
+            name: 'lpByontSupply',
             type: 'uint256',
           },
         ],
@@ -219,32 +219,32 @@ export const StateRegistryAbi = [
           },
           {
             internalType: 'uint256',
-            name: 'stabilityPoolDucaBalance',
+            name: 'stabilityPoolByontBalance',
             type: 'uint256',
           },
           {
             internalType: 'uint256',
-            name: 'stabilityPoolMDucaBalance',
+            name: 'stabilityPoolMByontBalance',
             type: 'uint256',
           },
           {
             internalType: 'uint256',
-            name: 'reserveMDucaBalance',
+            name: 'reserveMByontBalance',
             type: 'uint256',
           },
           {
             internalType: 'uint256',
-            name: 'mDucaCirculatingSupply',
+            name: 'mByontCirculatingSupply',
             type: 'uint256',
           },
           {
             internalType: 'uint256',
-            name: 'ducaSupply',
+            name: 'byontSupply',
             type: 'uint256',
           },
           {
             internalType: 'uint256',
-            name: 'lpDucaSupply',
+            name: 'lpByontSupply',
             type: 'uint256',
           },
         ],
@@ -268,12 +268,12 @@ export const StateRegistryAbi = [
     inputs: [
       {
         internalType: 'address',
-        name: '_ducaAddress',
+        name: '_byontAddress',
         type: 'address',
       },
       {
         internalType: 'address',
-        name: '_mDucaAddress',
+        name: '_mByontAddress',
         type: 'address',
       },
       {
@@ -361,7 +361,7 @@ export const StateRegistryAbi = [
   },
   {
     inputs: [],
-    name: 'mDucaAddress',
+    name: 'mByontAddress',
     outputs: [
       {
         internalType: 'address',
@@ -467,11 +467,11 @@ export const StateRegistryAbi = [
     inputs: [
       {
         internalType: 'address',
-        name: '_duca',
+        name: '_byont',
         type: 'address',
       },
     ],
-    name: 'setDuca',
+    name: 'setByont',
     outputs: [],
     stateMutability: 'nonpayable',
     type: 'function',
@@ -484,7 +484,7 @@ export const StateRegistryAbi = [
         type: 'address',
       },
     ],
-    name: 'setMDucaAddress',
+    name: 'setMByontAddress',
     outputs: [],
     stateMutability: 'nonpayable',
     type: 'function',

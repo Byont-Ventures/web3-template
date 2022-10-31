@@ -28,8 +28,9 @@ npm install --global yarn@1.22.19
 Then in the root of this repo:
 
 ```
-yarn install
+FONTAWESOME_NPM_AUTH_TOKEN=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX yarn install
 ```
+
 ## 2. Install foundry
 
 See the [docs](https://book.getfoundry.sh/getting-started/installation.html).
@@ -50,7 +51,7 @@ To configure/exclude certain rules reported by solhint, `.solhint.json` should b
 
 ```solidity
 require(<statement>, "<contract name> (<function name>): <error message>");
-````
+```
 
 #### Implementing an interface
 
@@ -104,7 +105,7 @@ The Byont website repository holds all the source code for the website. This rep
 ```sh
 cp .env.example .env.local
 
-yarn install
+FONTAWESOME_NPM_AUTH_TOKEN=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX yarn install
 
 # Generate boilerplate code for gRPC
 yarn buf:generate
@@ -142,5 +143,4 @@ yarn test:watch
 Pull requests are welcome. See the [contribution guidelines](/CONTRIBUTING.md) for more information.
 
 - https://github.com/tmm/testing-wagmi
-- https://github.com/rainbow-me/rainbowkit/issues/461
 - https://github.com/httptoolkit/mockthereum
