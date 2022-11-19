@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.17;
 
 contract Contract {
   function isMoreThanZero(uint256 amount) public pure {
