@@ -16,7 +16,7 @@ env:
   HUSKY: 0
 
 jobs:
-  format-test-lint:
+  check-and-release:
     runs-on: ubuntu-latest
 
     steps:
