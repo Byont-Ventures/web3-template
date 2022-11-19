@@ -1,3 +1,4 @@
+import { PickAndFlatten } from '@/app/types';
 import classNames from 'classnames';
 
 /** Typography variants */

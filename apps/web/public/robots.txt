@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.byont.io
+Host: undefined
 
 # Sitemaps
-Sitemap: https://www.byont.io/sitemap.xml
+Sitemap: undefined/sitemap.xml
