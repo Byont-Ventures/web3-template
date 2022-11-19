@@ -13,7 +13,7 @@
     "clean": "turbo run clean",
     "build": "turbo run build",
     "dev": "turbo run dev --no-cache --parallel --continue",
-    "format": "prettier --write \"**/*.{ts,tsx,md,json,sol,yml,yaml}\"",
+    "format": "prettier --write --ignore-path .gitignore .",
     "lint": "turbo run lint",
     "test": "turbo run test",
     "test:watch": "turbo run test:watch",

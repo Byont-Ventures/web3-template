@@ -4,6 +4,7 @@
 .turbo/
 data/
 dist/
+libs/
 node_modules/
 target/
 tests_output/
@@ -52,6 +53,3 @@ lcov.info
 **/**/flattened
 **/**/generated
 **/**/solc-out
-
-
-./libs/*
