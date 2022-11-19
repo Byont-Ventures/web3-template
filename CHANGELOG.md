@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Byont-Ventures/web3-template/compare/v1.0.0...v1.0.1) (2022-11-19)
+
+
+### Bug Fixes
+
+* removes libs from gitignore ([0d207ee](https://github.com/Byont-Ventures/web3-template/commit/0d207eef602a272f3b58929709ccf6314e25e0ee))
+
 # 1.0.0 (2022-11-19)
 
 ### Bug Fixes
