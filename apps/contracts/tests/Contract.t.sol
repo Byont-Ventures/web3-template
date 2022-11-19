@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.17;
 
 import "forge-std/Test.sol";
 
-import "@smart-contracts/Contract.sol";
+import "@contracts/src/Contract.sol";
 
 contract TestContract is Test {
   Contract c;

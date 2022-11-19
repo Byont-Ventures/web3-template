@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "forge build --optimize",
-    "test": "forge test -vvv",
+    "test": "FOUNDRY_PROFILE=contracts forge test --root ../../ -vvv",
     "test:watch": "forge test -vvv --watch",
     "coverage": "forge coverage -vvv",
     "lint": "solhint ./src/smart-contracts/*.sol",
