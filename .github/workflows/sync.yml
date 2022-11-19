@@ -12,10 +12,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.TEMPLATE_SYNC_AUTH_TOKEN }}
 
       - name: Sync Template
         uses: AndreasAugustin/actions-template-sync@v0.4.2-draft
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TEMPLATE_SYNC_AUTH_TOKEN }}
           source_repo_path: Byont-Ventures/web3-template
           upstream_branch: main
