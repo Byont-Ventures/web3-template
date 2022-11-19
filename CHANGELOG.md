@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/Byont-Ventures/web3-template/compare/v1.0.1...v1.1.0) (2022-11-19)
+
+
+### Bug Fixes
+
+* add pat to sync script ([7da0c15](https://github.com/Byont-Ventures/web3-template/commit/7da0c15df42edc9d0788b04aa54259951a8e0e9b))
+* adds changelog to prettier ignore ([0901ae9](https://github.com/Byont-Ventures/web3-template/commit/0901ae90280289e3d771a2cb642784c6643da59b))
+
+
+### Features
+
+* adds template sync ignore ([521ba05](https://github.com/Byont-Ventures/web3-template/commit/521ba05074af7f5945e96156c744275265d15192))
+
 ## [1.0.1](https://github.com/Byont-Ventures/web3-template/compare/v1.0.0...v1.0.1) (2022-11-19)
 
 
