@@ -1,0 +1,25 @@
+{
+  "name": "byontio-contracts",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "forge build --optimize",
+    "test": "forge test -vvv",
+    "test:watch": "forge test -vvv --watch",
+    "coverage": "forge coverage -vvv",
+    "lint": "solhint ./src/smart-contracts/*.sol",
+    "format": "prettier --loglevel warn --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0",
+    "@openzeppelin/contracts-upgradeable": "^4.8.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0",
+    "sol-merger": "^4.1.1",
+    "solhint": "^3.3.7",
+    "solhint-plugin-prettier": "^0.0.5"
+  }
+}
