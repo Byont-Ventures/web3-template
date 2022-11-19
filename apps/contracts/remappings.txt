@@ -1,0 +1,4 @@
+@openzeppelin/=../../node_modules/@openzeppelin/
+@contracts/=src/
+ds-test/=../../libs/ds-test/src/
+forge-std/=../../libs/forge-std/src/

@@ -16,6 +16,27 @@ $ FONTAWESOME_NPM_AUTH_TOKEN=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX yarn install
 $ yarn test
 ```
 
+## Deployments
+
+To get started, you need the following data:
+
+- Your private key, a Ledger, or a file with a mnemonic.
+- [Alchemy RPC](https://dashboard.alchemy.com/)
+- [Etherscan API key](https://etherscan.io/myaccount) or [Polygonscan API key](https://polygonscan.com/myaccount)
+
+Now you can run the following commands to deploy and verify the smart contract:
+
+```sh
+# Using a mnemonic file
+forge create --rpc-url $ALCHEMY_RPC src/Contract.sol:Contract --mnemonic-path $MNEMONIC_PATH --etherscan-api-key $ETHERSCAN_API_KEY --verify
+
+# Using a private key
+forge create --rpc-url $ALCHEMY_RPC src/Contract.sol:Contract --private-key $PRIVATE_KEY --etherscan-api-key $ETHERSCAN_API_KEY --verify
+
+# Using a ledger
+forge create --rpc-url $ALCHEMY_RPC src/Contract.sol:Contract --ledger --etherscan-api-key $ETHERSCAN_API_KEY --verify
+```
+
 ## Style guide
 
 For solidity smart code, solidity.org has published its [standard](https://docs.soliditylang.org/en/develop/style-guide.html), similar to python’s [pep8](https://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds).

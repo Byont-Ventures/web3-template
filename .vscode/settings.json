@@ -1,7 +1,7 @@
 {
   "solidity.remappings": [
     "@openzeppelin/=node_modules/@openzeppelin/",
-    "@contracts/=apps/contracts/",
+    "@contracts/=apps/contracts/src/",
     "ds-test/=libs/ds-test/src/",
     "forge-std/=libs/forge-std/src/"
   ],
