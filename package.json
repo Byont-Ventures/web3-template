@@ -13,7 +13,7 @@
     "clean": "turbo run clean",
     "build": "turbo run build",
     "dev": "turbo run dev --no-cache --parallel --continue",
-    "format": "prettier --write --ignore-path .gitignore .",
+    "format": "prettier --write --ignore-path .prettierignore .",
     "lint": "turbo run lint",
     "test": "turbo run test",
     "test:watch": "turbo run test:watch",
