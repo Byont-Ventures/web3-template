@@ -13,7 +13,6 @@ test = 'apps/contracts/tests'
 out = 'apps/contracts/dist'
 cache_path = 'apps/contracts/cache'
 libs = ['libs', 'node_modules']
-
 solc = '0.8.17'
 verbosity = 4
 

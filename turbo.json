@@ -40,6 +40,7 @@
       "dependsOn": ["^build"],
       "outputs": []
     },
+    "coverage": {},
     "clean": {
       "outputs": []
     }
