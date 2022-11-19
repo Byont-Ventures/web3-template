@@ -7,7 +7,6 @@
     "test": "forge test -vvv",
     "test:watch": "forge test --watch",
     "coverage": "forge coverage --report lcov --report summary",
-    "deploy": "forge create --rpc-url $RPC_URL --private-key $PRIVATE_KEY $CONTRACT --etherscan-api-key $ETHERSCAN_API_KEY --verify",
     "lint": "solhint ./src/smart-contracts/*.sol"
   },
   "dependencies": {
