@@ -6,6 +6,7 @@ import { MockedProvider } from '@byont/mocketh';
 import { providers, Wallet } from 'ethers';
 import React, { PropsWithChildren, ReactElement } from 'react';
 
+import { MockConnector } from 'wagmi/connectors/mock';
 import {
   CreateClientConfig,
   WagmiConfigProps,
@@ -13,7 +14,6 @@ import {
   createClient,
   chain,
 } from 'wagmi';
-import { MockConnector } from 'wagmi/connectors/mock';
 import { accounts } from './constants';
 
 /** Setup a Wagmi client based on a custom provider */

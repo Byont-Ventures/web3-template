@@ -16,10 +16,7 @@ describe('<SkipToMain />', () => {
     it('is #maincontent', () => {
       const { getByTestId } = render(<SkipToMain />);
 
-      expect(getByTestId('SkipToMain')).toHaveAttribute(
-        'href',
-        '/#maincontent'
-      );
+      expect(getByTestId('SkipToMain')).toHaveAttribute('href', '#maincontent');
     });
   });
 });
