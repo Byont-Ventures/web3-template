@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "forge build --optimize",
-    "test": "forge test -vvv",
+    "test": "forge test",
     "test:watch": "forge test --watch",
     "coverage": "forge coverage --report lcov --report summary",
     "lint": "solhint ./src/smart-contracts/*.sol"

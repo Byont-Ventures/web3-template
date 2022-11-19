@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "forge-std/Test.sol";
 
-import "@contracts/src/Contract.sol";
+import "@contracts/Contract.sol";
 
 contract TestContract is Test {
   Contract c;
