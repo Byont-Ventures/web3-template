@@ -12,6 +12,8 @@ on:
 
 env:
   FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_AUTH_TOKEN }}
+  HUSKY: 0
 
 jobs:
   format-test-lint:
@@ -56,3 +58,6 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           base-path: ./
           path-to-lcov: lcov.info
+
+      - name: Semantic Release
+        run: yarn run semantic-release
