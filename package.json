@@ -16,9 +16,14 @@
     "format": "prettier --write \"**/*.{ts,tsx,md,json,sol,yml,yaml}\"",
     "lint": "turbo run lint",
     "test": "turbo run test",
-    "test:watch": "turbo run test:watch"
+    "test:watch": "turbo run test:watch",
+    "postinstall": "husky install",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@commitlint/prompt-cli": "^17.1.2",
     "husky": "^8.0.0",
     "prettier": "^2.7.1",
     "prettier-plugin-jsdoc": "^0.4.2",
