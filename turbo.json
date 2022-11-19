@@ -1,0 +1,48 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "dev": {
+      "dependsOn": ["^build"],
+      "cache": false
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "web#build": {
+      "dependsOn": ["^build"],
+      "env": [
+        "NEXT_TELEMETRY_DISABLED",
+        "NEXT_ANALYZE_BUNDLE",
+        "NEXT_PUBLIC_APP_URL",
+        "NEXT_PUBLIC_APP_NAME",
+        "NEXT_PUBLIC_API_URL",
+        "NEXT_PUBLIC_DEFAULT_CHAIN",
+        "NEXT_PUBLIC_ALCHEMY_API_KEY",
+        "NEXT_PUBLIC_STATE_REGISTRY_ADDRESS",
+        "NEXT_PUBLIC_ENABLE_TESTNETS"
+      ],
+      "outputs": [".next/**"]
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "cache": false
+    },
+    "test:watch": {
+      "dependsOn": ["^build"],
+      "cache": false
+    },
+    "lint": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "format": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "coverage": {},
+    "clean": {
+      "outputs": []
+    }
+  }
+}

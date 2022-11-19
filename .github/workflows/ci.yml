@@ -1,0 +1,58 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - v*
+  pull_request:
+    branches:
+      - main
+
+env:
+  FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
+
+jobs:
+  format-test-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
+
+      - name: Setup LCOV
+        uses: Byont-Ventures/setup-lcov@main
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'yarn'
+
+      - name: Install project dependencies
+        run: yarn --prefer-offline
+
+      - name: Format apps
+        run: yarn format
+
+      - name: Run linters, and tests
+        run: yarn run turbo lint test coverage
+
+      - name: Merge and clean LCOV reports
+        run: |
+          find apps -name lcov.info -exec echo -a {} \; | xargs lcov -o lcov.info
+          lcov --remove lcov.info -o lcov.info '**/**/tests/**' '**/**/mocks/**'
+
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          base-path: ./
+          path-to-lcov: lcov.info

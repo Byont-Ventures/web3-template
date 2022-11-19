@@ -1,0 +1,17 @@
+{
+  "extends": "preset-tsconfig/next.tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/app/*": ["src/*"],
+      "@/components/*": ["src/components/*"],
+      "@/libs/*": ["src/libs/*"],
+      "@/tests/*": ["tests/*"],
+      "@/tests": ["tests/index"],
+      "@/images/*": ["public/images/*"]
+    },
+    "allowJs": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

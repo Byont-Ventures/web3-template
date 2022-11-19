@@ -1,3 +1,4 @@
 @openzeppelin/=node_modules/@openzeppelin/
-forge-std/=smart-contracts/libs/forge-std/src/
-@smart-contracts=smart-contracts/src/
+@contracts/=apps/contracts/
+ds-test/=libs/ds-test/src/
+forge-std/=libs/forge-std/src/
