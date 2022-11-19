@@ -53,3 +53,5 @@ lcov.info
 **/**/generated
 **/**/solc-out
 
+
+./libs/**/**
