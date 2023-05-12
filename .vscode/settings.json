@@ -8,6 +8,9 @@
   "solidity.packageDefaultDependenciesContractsDirectory": "./node_modules",
   "solidity.formatter": "prettier",
   "solidity.linter": "solhint",
+  "[solidity]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
